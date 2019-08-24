@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   get    '/signup',  to: 'users#new'
   get    '/login',   to: 'sessions#new'
-  get    '/show',   to: 'secrets#show'
+  get    '/show',   to: 'users#show'
   post   '/login',   to: 'sessions#create'
   post '/logout' => 'sessions#destroy'
 
