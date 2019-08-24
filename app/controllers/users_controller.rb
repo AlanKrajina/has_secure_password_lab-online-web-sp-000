@@ -11,6 +11,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+      binding.pry
       redirect_to controller: 'application', action: 'hello'
     else
       render 'new'
