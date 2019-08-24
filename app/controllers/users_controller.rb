@@ -12,7 +12,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
 #      binding.pry
-      redirect_to controller: 'application', action: 'hello'
+      redirect_to controller: 'welcome', action: 'home'
     else
       redirect_to controller: 'users', action: 'new'
     end
