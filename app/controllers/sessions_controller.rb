@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
     if @user && @user.authenticate(params[:user][:password])
       session[:user_id] = @user.id
 
-      redirect_to controller: 'application', action: 'hello'
+      redirect_to controller: 'welcome', action: 'home'
 
     end
   end
