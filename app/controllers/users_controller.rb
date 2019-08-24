@@ -14,7 +14,7 @@ class UsersController < ApplicationController
 #      binding.pry
       redirect_to controller: 'application', action: 'hello'
     else
-      render 'new'
+      redirect_to controller: 'users', action: 'new'
     end
   end
 
